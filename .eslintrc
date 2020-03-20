@@ -1,0 +1,23 @@
+{
+  "extends": ["airbnb/base", "prettier", "plugin:vue/essential"],
+  "plugins": ["prettier"],
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "commonjs": true
+  },
+  "parserOptions": {
+    "parser": "babel-eslint",
+    "ecmaVersion": 2019,
+    "sourceType": "module",
+    "allowImportExportEverywhere": true
+  },
+  "rules": {
+    "semi": 2,
+    "no-console": "off",
+    "func-names": "off",
+    "no-underscore-dangle": "off",
+    "no-param-reassign": "off"
+  }
+}

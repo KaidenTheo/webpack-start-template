@@ -1,0 +1,14 @@
+RewriteEngine on
+
+RewriteRule ^icons/(.*)$ /assets/icons/$1 [NS,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+DirectoryIndex index.php
+
+RewriteRule ^.*$ index.php [NS,L]
+
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+</IfModule>
